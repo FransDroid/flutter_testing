@@ -29,7 +29,7 @@ void main(){
       await tester.pump();
 
       final firstBookFinder = find.text("Book 0");
-      final elevenBookFinder = find.text("Book 11");
+      final elevenBookFinder = find.text("Book 10");
       final listTilesFinder = find.byType(ListTile);
       expect(firstBookFinder, findsNothing);
       expect(elevenBookFinder, findsOneWidget);
